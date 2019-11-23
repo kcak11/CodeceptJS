@@ -1,19 +1,46 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Parallel Execution · CodeceptJS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;CodeceptJS has two engines for running tests in parallel:&lt;/p&gt;
-"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Parallel Execution · CodeceptJS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://codecept.io/index.html"/><meta property="og:description" content="&lt;p&gt;CodeceptJS has two engines for running tests in parallel:&lt;/p&gt;
-"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-30075781-3"></script><script>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Parallel Execution · CodeceptJS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="CodeceptJS has two engines for running tests in parallel:"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Parallel Execution · CodeceptJS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://codecept.io/"/><meta property="og:description" content="CodeceptJS has two engines for running tests in parallel:"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-30075781-3"></script><script>
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments); }
               gtag('js', new Date());
               gtag('config', 'UA-30075781-3');
-            </script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo.svg" alt="CodeceptJS"/><h2 class="headerTitleWithLogo">CodeceptJS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/quickstart" target="_self">Quickstart</a></li><li class="siteNavGroupActive"><a href="/basics" target="_self">Guides</a></li><li class=""><a href="/reference" target="_self">API</a></li><li class=""><a href="/changelog" target="_self">Releases</a></li><li class=""><a href="/help" target="_self">Support</a></li><li class=""><a href="https://github.com/Codeception/CodeceptJS" target="_self">GitHub</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Organizing Tests</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Web Testing</h3><ul><li class="navListItem"><a class="navItem" href="/basics">Basics</a></li><li class="navListItem"><a class="navItem" href="/webdriver">Testing with WebDriver</a></li><li class="navListItem"><a class="navItem" href="/puppeteer">Testing with Puppeteer</a></li><li class="navListItem"><a class="navItem" href="/testcafe">Testing with TestCafe</a></li><li class="navListItem"><a class="navItem" href="/angular">Testing with Protractor</a></li><li class="navListItem"><a class="navItem" href="/nightmare">Testing with Nightmare</a></li><li class="navListItem"><a class="navItem" href="/visual">Visual Testing</a></li><li class="navListItem"><a class="navItem" href="/email">Email Testing</a></li><li class="navListItem"><a class="navItem" href="/react">Testing React Applications</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Mobile Testing</h3><ul><li class="navListItem"><a class="navItem" href="/mobile">Mobile Testing with Appium</a></li><li class="navListItem"><a class="navItem" href="/detox">Testing React Native with Detox</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Organizing Tests</h3><ul><li class="navListItem"><a class="navItem" href="/best">Best Practices</a></li><li class="navListItem"><a class="navItem" href="/locators">Locators</a></li><li class="navListItem"><a class="navItem" href="/pageobjects">Page Objects</a></li><li class="navListItem"><a class="navItem" href="/helpers">Custom Helpers</a></li><li class="navListItem"><a class="navItem" href="/bdd">Behavior Driven Development</a></li><li class="navListItem"><a class="navItem" href="/data">Data Management</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/parallel">Parallel Execution</a></li><li class="navListItem"><a class="navItem" href="/reports">Reporters</a></li><li class="navListItem"><a class="navItem" href="/advanced">Advanced Usage</a></li><li class="navListItem"><a class="navItem" href="/hooks">Bootstrap / Teardown / Plugins</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Tutorials</h3><ul><li class="navListItem"><a class="navItem" href="/books">Books &amp; Posts</a></li><li class="navListItem"><a class="navItem" href="/videos">Videos</a></li><li class="navListItem"><a class="navItem" href="/examples">Examples</a></li></ul></div></div></section></div><script>
+            </script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo.svg" alt="CodeceptJS"/><h2 class="headerTitleWithLogo">CodeceptJS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/quickstart" target="_self">Quickstart</a></li><li class="siteNavGroupActive"><a href="/basics" target="_self">Guides</a></li><li class=""><a href="/reference" target="_self">API</a></li><li class=""><a href="/changelog" target="_self">Releases</a></li><li class=""><a href="/help" target="_self">Support</a></li><li class=""><a href="https://github.com/Codeception/CodeceptJS" target="_self">GitHub</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Organizing Tests</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Web Testing</h3><ul class=""><li class="navListItem"><a class="navItem" href="/basics">Basics</a></li><li class="navListItem"><a class="navItem" href="/webdriver">Testing with WebDriver</a></li><li class="navListItem"><a class="navItem" href="/puppeteer">Testing with Puppeteer</a></li><li class="navListItem"><a class="navItem" href="/testcafe">Testing with TestCafe</a></li><li class="navListItem"><a class="navItem" href="/angular">Testing with Protractor</a></li><li class="navListItem"><a class="navItem" href="/nightmare">Testing with Nightmare</a></li><li class="navListItem"><a class="navItem" href="/visual">Visual Testing</a></li><li class="navListItem"><a class="navItem" href="/email">Email Testing</a></li><li class="navListItem"><a class="navItem" href="/react">Testing React Applications</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Mobile Testing</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mobile">Mobile Testing with Appium</a></li><li class="navListItem"><a class="navItem" href="/detox">Testing React Native with Detox</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Organizing Tests</h3><ul class=""><li class="navListItem"><a class="navItem" href="/best">Best Practices</a></li><li class="navListItem"><a class="navItem" href="/locators">Locators</a></li><li class="navListItem"><a class="navItem" href="/pageobjects">Page Objects</a></li><li class="navListItem"><a class="navItem" href="/helpers">Custom Helpers</a></li><li class="navListItem"><a class="navItem" href="/bdd">Behavior Driven Development</a></li><li class="navListItem"><a class="navItem" href="/data">Data Management</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/parallel">Parallel Execution</a></li><li class="navListItem"><a class="navItem" href="/reports">Reporters</a></li><li class="navListItem"><a class="navItem" href="/advanced">Advanced Usage</a></li><li class="navListItem"><a class="navItem" href="/hooks">Bootstrap / Teardown / Plugins</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Tutorials</h3><ul class=""><li class="navListItem"><a class="navItem" href="/books">Books &amp; Posts</a></li><li class="navListItem"><a class="navItem" href="/videos">Videos</a></li><li class="navListItem"><a class="navItem" href="/examples">Examples</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
             document.addEventListener('DOMContentLoaded', function() {
               createToggler('#navToggler', '#docsNav', 'docsSliderActive');
               createToggler('#tocToggler', 'body', 'tocActive');
 
-              const headings = document.querySelector('.toc-headings');
+              var headings = document.querySelector('.toc-headings');
               headings && headings.addEventListener('click', function(event) {
-                if (event.target.tagName === 'A') {
-                  document.body.classList.remove('tocActive');
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
                 }
               }, false);
 
@@ -32,7 +59,7 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/Codeception/CodeceptJS/blob/master/docs/parallel.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Parallel Execution</h1></header><article><div><span><p>CodeceptJS has two engines for running tests in parallel:</p>
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/Codeception/CodeceptJS/blob/master/docs/parallel.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">Parallel Execution</h1></header><article><div><span><p>CodeceptJS has two engines for running tests in parallel:</p>
 <ul>
 <li><code>run-workers</code> - which spawns <a href="https://nodejs.org/api/worker_threads.html">NodeJS Worker</a> in a thread. Tests are split by scenarios, scenarios are mixed between groups, each worker runs tests from its own group.</li>
 <li><code>run-multiple</code> - which spawns a subprocess with CodeceptJS. Tests are split by files and configured in <code>codecept.conf.js</code>.</li>
@@ -56,7 +83,7 @@
 <pre><code class="hljs css language-js">multiple: {
   <span class="hljs-attr">basic</span>: {
     <span class="hljs-comment">// run all tests in chrome and firefox</span>
-    browsers: [<span class="hljs-string">"chrome"</span>, <span class="hljs-string">"firefox"</span>]
+    <span class="hljs-attr">browsers</span>: [<span class="hljs-string">"chrome"</span>, <span class="hljs-string">"firefox"</span>]
   },
 
   <span class="hljs-attr">smoke</span>: {
@@ -130,7 +157,7 @@
 <pre><code class="hljs css language-js">multiple: {
   <span class="hljs-attr">parallel</span>: {
     <span class="hljs-comment">// Splits tests into 2 chunks</span>
-    chunks: <span class="hljs-number">2</span>
+    <span class="hljs-attr">chunks</span>: <span class="hljs-number">2</span>
   }
 }
 </code></pre>
@@ -140,11 +167,11 @@
 <p>Grep and multiple browsers are supported. Passing more than one browser will multiply the amount of suites by the amount of browsers passed. The following example will lead to four parallel runs.</p>
 <pre><code class="hljs css language-js">multiple: {
   <span class="hljs-comment">// 2x chunks + 2x browsers = 4</span>
-  parallel: {
+  <span class="hljs-attr">parallel</span>: {
     <span class="hljs-comment">// Splits tests into chunks</span>
-    chunks: <span class="hljs-number">2</span>,
+    <span class="hljs-attr">chunks</span>: <span class="hljs-number">2</span>,
     <span class="hljs-comment">// run all tests in chrome and firefox</span>
-    browsers: [<span class="hljs-string">"chrome"</span>, <span class="hljs-string">"firefox"</span>]
+    <span class="hljs-attr">browsers</span>: [<span class="hljs-string">"chrome"</span>, <span class="hljs-string">"firefox"</span>]
   },
 }
 </code></pre>
@@ -153,14 +180,14 @@
   <span class="hljs-attr">parallel</span>: {
     <span class="hljs-comment">// Splits tests into chunks by passing an anonymous function,</span>
     <span class="hljs-comment">// only execute first and last found test file</span>
-    chunks: <span class="hljs-function">(<span class="hljs-params">files</span>) =&gt;</span> {
+    <span class="hljs-attr">chunks</span>: <span class="hljs-function">(<span class="hljs-params">files</span>) =&gt;</span> {
       <span class="hljs-keyword">return</span> [
         [ files[<span class="hljs-number">0</span>] ], <span class="hljs-comment">// chunk 1</span>
         [ files[files.length<span class="hljs-number">-1</span>] ], <span class="hljs-comment">// chunk 2</span>
       ]
     },
     <span class="hljs-comment">// run all tests in chrome and firefox</span>
-    browsers: [<span class="hljs-string">"chrome"</span>, <span class="hljs-string">"firefox"</span>]
+    <span class="hljs-attr">browsers</span>: [<span class="hljs-string">"chrome"</span>, <span class="hljs-string">"firefox"</span>]
   }
 }
 </code></pre>
